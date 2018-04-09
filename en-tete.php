@@ -16,7 +16,7 @@
 
 
     <title>Freelancer - Start Bootstrap Theme</title>
-
+ 
 
 
     <!-- Bootstrap core CSS -->
@@ -44,6 +44,7 @@
     <!-- Custom styles for this template -->
 
     <link href="css/freelancer.min.css" rel="stylesheet">
+	<link href="css/style_admin.css" rel="stylesheet">
 
 
 
