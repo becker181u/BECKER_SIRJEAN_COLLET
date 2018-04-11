@@ -1,1 +1,6 @@
-// style du site admin
+.bg-primary{
+  background-color: #E5E8E8 !important;
+}
+.bg-secondary {
+    background-color: #F1948A!important;
+}

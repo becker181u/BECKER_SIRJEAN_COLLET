@@ -15,7 +15,7 @@
 
 
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Bornes Solidaires</title>
  
 
 
@@ -62,7 +62,7 @@
 
       <div class="container">
 
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Bornes Solidaires</a>
 
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -78,13 +78,13 @@
 
             <li class="nav-item mx-0 mx-lg-1">
 
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Inscription</a>
 
             </li>
 
             <li class="nav-item mx-0 mx-lg-1">
 
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Connexion</a>
 
             </li>
 
@@ -110,13 +110,10 @@
 
       <div class="container">
 
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
+        <h1 class="text-uppercase mb-0">Bornes Solidaires</h1>
 
-        <h1 class="text-uppercase mb-0">Start Bootstrap</h1>
 
-        <hr class="star-light">
-
-        <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
+        <h2 class="font-weight-light mb-0">Réseau associatif - Innovation Sociale - Renseignements et orientation pour personnes en difficulté</h2>
 
       </div>
 
