@@ -1,0 +1,60 @@
+.bg-primary{
+  background-color: #E5E8E8 !important;
+}
+.bg-secondary {
+    background-color: #F1948A!important;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FEFEFE;
+}
+
+header.masthead h1{
+	padding-left: 10%;
+	margin: 0;
+	padding-bottom: 0.5%;
+	font-size: 3em;
+}
+
+header.masthead h2{
+	padding-top: 0%;
+	padding-left: 10%;
+}
+
+header.masthead{
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+label, input{
+	font-size: 0.95em;
+	color: #211D1D;
+}
+
+form{
+	border: 2px #7D7D7D solid;
+	margin-top: 3em;
+	width: 36.5%;
+	margin-left: 7%;
+	margin-bottom: 4em;
+	padding: 2em;
+	position: center;
+}
+
+footer{
+	font-size: 1em;
+	text-align: center;
+ 	color: #211D1D;
+ 	bottom: 0;
+ 	width: 100%;
+ 	padding-top: 0.5%;
+ 	padding-bottom: 1%;
+ 	position: fixed;
+}
+
+footer a{
+	color: black;
+}
