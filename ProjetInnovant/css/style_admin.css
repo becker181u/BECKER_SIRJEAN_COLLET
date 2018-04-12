@@ -16,20 +16,24 @@ header.masthead h1{
 	padding-left: 10%;
 	margin: 0;
 	padding-bottom: 0.5%;
-	font-size: 3em;
+	font-size: 5em;
 }
 
 header.masthead h2{
 	padding-top: 0%;
 	padding-left: 10%;
+	top: 0;
 }
 
 header.masthead{
 	padding-top: 1%;
 	padding-bottom: 1%;
+	border-bottom: 6px inset;
+	border-color: #F1948A;
+	border-radius: 5px;
 }
 
-label, input{
+label, input,.select{
 	font-size: 0.95em;
 	color: #211D1D;
 }
@@ -37,11 +41,10 @@ label, input{
 form{
 	border: 2px #7D7D7D solid;
 	margin-top: 3em;
-	width: 36.5%;
-	margin-left: 7%;
+	width: 40%;
+	margin-left: 30%;
 	margin-bottom: 4em;
 	padding: 2em;
-	position: center;
 }
 
 footer{
@@ -49,12 +52,29 @@ footer{
 	text-align: center;
  	color: #211D1D;
  	bottom: 0;
+ 	position: fixed;
  	width: 100%;
  	padding-top: 0.5%;
  	padding-bottom: 1%;
- 	position: fixed;
+ 	border-top: 6px outset;
+	border-color: #F1948A;
+	border-radius: 5px;
 }
 
 footer a{
 	color: black;
+}
+
+h1{
+	font-family: "Gloria Hallelujah",cursive;
+	padding-left: 10%;
+}
+
+input,.select,select{
+	font-family: "Gloria Hallelujah",cursive;
+}
+
+input,.select,select{
+	width: 100%;
+	background-color: #E5E8E8;
 }

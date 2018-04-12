@@ -2,13 +2,10 @@
 <html>
 	<head> 
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="css/style_menu+entete+pieddepage.css"/>
-		<link rel="stylesheet" href="css/style_contact.css"/>
-		<link rel="stylesheet" href="css/style_inscription.css"/>
 		<title>Borne Solidaire</title>
 	</head>
+	<?php include("en-tete.php"); ?>
 	<body>
-		<?php include("en-tete.php"); ?>
 		<?php include("openbdd.php"); ?>
 		<?php
 		if (isset($_POST['identifiant'])AND($_POST['Pass']==$_POST['Pass2'])){			
@@ -20,7 +17,7 @@
 			$M=$_POST['Mail'];
 			$T=$_POST['téléphone'];
 			$D=$_POST['description'];
-			$F="Hébergement";
+			$F=$_POST['fonction'];
 			$Pa=password_hash($_POST['Pass'], PASSWORD_DEFAULT);
 			$requete = "INSERT INTO membres VALUES (\"".$Id."\",\"".$Pa."\",\"".$N."\",0,\"".$A."\",\"".$V."\",\"".$CP."\",\"".$F."\",\"".$M."\",\"".$T."\",\"".$D."\")";
 			$query='SELECT * FROM membres ;';
@@ -67,8 +64,6 @@
 					<input type="text" name="identifiant" required/>
 				</div>
 				<div class="formulaire">
-					<label></label>
-				<div class="formulaire">
 					<label for="Nom">Nom de l'hébergement: </label><br/>
 					<input type="text" name="Nom" required/>
 				</div>
@@ -104,10 +99,18 @@
 					<label for="Pass2">Confirmez le mot de passe : </label><br/>
 					<input type="password" name="Pass2" required/>
 				</div><br/>
+				<div class="select">
+					<select class="formulaire" name="fonction">
+						<option value="Hébergement" selected>Hébergement</option>
+						<option value="Administrateur">Administrateur</option>
+						<option value="Actif">Membre actif</option>
+						<option value="Inactif">Membre inactif</option>	
+					</select>
+				</div><br/>
 				<input type="submit" value="Envoyer" />
 			</form>
 			<?php
 		} ?>
-	<?php include("pied_de_page.php"); ?>
 </body>
+<?php include("pied_de_page.php"); ?>
 </html>

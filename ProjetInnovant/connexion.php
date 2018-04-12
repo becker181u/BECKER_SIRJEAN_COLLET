@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<?php include("en-tete.php"); ?>
-	<body class="ppp">
+	<body>
 		<?php include("openbdd.php"); ?>
 		<form method="post" id="Bouton">
 			<div class="formulaire">
@@ -11,7 +11,7 @@
 			<div class="formulaire ">
 				<label for="pass">Mot de passe : </label><br/>
 				<input type="password" name="pass" required/>
-			</div>
+			</div><br/>
 			<input type="submit" value="Se connecter" />
 		</form>	
 		<?php 
@@ -34,51 +34,7 @@
 					<input  type="submit" value="Accueil" />
 				</form>
 			<?php } 
-		}?>
-		<form method="post" id="Bouton">
-			<div class="formulaire">
-				<label for="identifiant">Identifiant: </label><br/>
-				<input type="text" name="identifiant" required/>
-			</div>
-			<div class="formulaire ">
-				<label for="pass">Mot de passe : </label><br/>
-				<input type="password" name="pass" required/>
-			</div>
-			<input type="submit" value="Se connecter" />
-		</form>	
-		<form method="post" id="Bouton">
-			<div class="formulaire">
-				<label for="identifiant">Identifiant: </label><br/>
-				<input type="text" name="identifiant" required/>
-			</div>
-			<div class="formulaire ">
-				<label for="pass">Mot de passe : </label><br/>
-				<input type="password" name="pass" required/>
-			</div>
-			<input type="submit" value="Se connecter" />
-		</form>	
-		<form method="post" id="Bouton">
-			<div class="formulaire">
-				<label for="identifiant">Identifiant: </label><br/>
-				<input type="text" name="identifiant" required/>
-			</div>
-			<div class="formulaire ">
-				<label for="pass">Mot de passe : </label><br/>
-				<input type="password" name="pass" required/>
-			</div>
-			<input type="submit" value="Se connecter" />
-		</form>	
-		<form method="post" id="Bouton">
-			<div class="formulaire">
-				<label for="identifiant">Identifiant: </label><br/>
-				<input type="text" name="identifiant" required/>
-			</div>
-			<div class="formulaire ">
-				<label for="pass">Mot de passe : </label><br/>
-				<input type="password" name="pass" required/>
-			</div>
-			<input type="submit" value="Se connecter" />
-		</form>	
+		}?>	
 	</body>
 	<?php include("pied_de_page.php"); ?>
 </html>

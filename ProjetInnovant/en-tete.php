@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
 
-
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
     <meta charset="utf-8">
 
@@ -16,7 +16,8 @@
 
 
     <title>Bornes Solidaires</title>
- 
+    
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
 
 
     <!-- Bootstrap core CSS -->
@@ -58,6 +59,10 @@
     <!-- Header -->
 
     <header class="masthead bg-secondary text-white text-center">
+
+        <?php
+            session_start(); 
+        ?>
 
       <div class="container">
 
