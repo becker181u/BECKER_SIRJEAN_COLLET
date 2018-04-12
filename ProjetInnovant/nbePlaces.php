@@ -1,16 +1,17 @@
 </!DOCTYPE html>
 <html lang="fr">
+	<?php include("openbdd.php");?>
+	<?php include("en-tete.php");?>
 	<body>
 	<?php 
-		include("openbdd.php");
-		include("en-tete.php");
-	?>
-	<?php 
-	include("openbdd.php");
 	if (isset($_POST['NbePlace']) && isset($_SESSION['identifiant'])){
-		$N=$_POST['NbePlace'];
-		$requete = 'UPDATE(membres SET nbePlace=$N WHERE identifiant=$_SESSION[identifiant])'; 
-		if ($reponse= $bdd->query($requete)){ ?>
+		$N=$_POST['NbePlace']."";
+		$requete=$bdd->prepare('UPDATE membres SET nbePlace= :nbePlace WHERE identifiant= :id');
+		$requete->execute(array(
+			'nbePlace' => $N,
+			'id' => $_SESSION["identifiant"]
+		));
+		if ($requete){ ?>
 			<p class="enr">Enregistrement terminée </p><br/>
 			<form  action ="index.php" method="post">
 				<input  type="submit" value="Retour" />
@@ -22,7 +23,6 @@
 				<input  type="submit" value="Recommencer" />
 			</form>
 		<?php }
-
 	}
 	else{
 		if (isset($_SESSION['identifiant'])) {
