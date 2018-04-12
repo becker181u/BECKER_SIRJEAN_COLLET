@@ -1,10 +1,63 @@
-.col-md-5, .col-md-6, .col-md-4, .col-md-2{
-	border-color : black;
-	border-style : solid;
-	border-width : 1px;
-	padding : 20px;
-}
 
 h3{
-	font-style : bold;
+	--font-weight : bold;
+	font-size : 2em;
+	padding-bottom : 15px;
+}
+
+.contain{
+	margin-left : 10px;
+	margin-top : 20px;
+	padding-bottom : 10px;
+	padding-top : 10px;
+	background-color : red;
+	border-radius : 40px;
+}
+
+.mid{
+	margin-left : -30px;
+	margin-right : -30px;
+}
+
+.date{
+	text-align : right;
+}
+
+.header{
+	padding-bottom : 5px;
+	font-size : 2em;
+	background-color : lightgrey;
+}
+
+.title{
+	text-align : center;
+}
+
+body{
+	background-color : black;
+}
+
+.contain > div > :not(.last-row){
+	border-style : solid;
+	background-color : yellow;
+	margin-bottom : 20px;
+	margin : 5px;
+}
+
+.info{
+	border : 5px 5px 5px 5px;
+	padding-left : 30px;
+	padding-bottom : 15px;
+	padding-top : 15px;
+	padding-right : 0px;
+	font-size : 2rem;
+	margin : 0;
+}
+
+.col-md-6{
+	max-width : 40%;
+}
+
+.col-md-10{
+	max-width : 75%;
 }
