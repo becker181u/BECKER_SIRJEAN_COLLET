@@ -1,8 +1,8 @@
 
 h3{
-	--font-weight : bold;
-	font-size : 2em;
+	font-size : 2.2em;
 	padding-bottom : 15px;
+	border-bottom : 2px solid #ffc0fd;
 }
 
 .contain{
@@ -10,8 +10,8 @@ h3{
 	margin-top : 20px;
 	padding-bottom : 10px;
 	padding-top : 10px;
-	background-color : red;
-	border-radius : 40px;
+	height : 400px;
+	border-bottom : 2px solid #ffc0fd;
 }
 
 .mid{
@@ -23,10 +23,10 @@ h3{
 	text-align : right;
 }
 
-.header{
+.header, .footer{
 	padding-bottom : 5px;
 	font-size : 2em;
-	background-color : lightgrey;
+	background-color : #ffc0fd;
 }
 
 .title{
@@ -34,15 +34,18 @@ h3{
 }
 
 body{
-	background-color : black;
+	background-color : white;
 }
 
 .contain > div > :not(.last-row){
-	border-style : solid;
-	background-color : yellow;
-	margin-bottom : 20px;
+	font-size : 1.8rem;
+	margin-bottom : 40px;
 	margin : 5px;
+	padding-left : 30px;
+	padding-bottom : 20px;
 }
+
+	
 
 .info{
 	border : 5px 5px 5px 5px;
@@ -55,9 +58,80 @@ body{
 }
 
 .col-md-6{
-	max-width : 40%;
+	max-width : 43%;
 }
+
 
 .col-md-10{
 	max-width : 75%;
+}
+
+.white-pane{
+	background-color : white;
+}
+
+.degrade{
+	background-image:linear-gradient(#ffc0fd, white);
+	height : 3px;
+	width : 100%;
+	display : bloc;
+	margin-left : -15px;	
+	padding : 0px;
+}
+
+.bloc-bas{
+	padding-top : 8%;
+}
+
+.event, .contact{
+	background-color : #ffc0fd;
+	font-size : 2.5rem;
+	max-width : 20%;
+	margin-right : 15px;
+	height : 200px;
+}
+
+.event{
+	margin-left : 15px;
+}
+
+.contact{
+	background-color : #c388da;
+	margin : 0px;
+}
+
+.sos{
+	background-color:red;
+	border: none;
+	border-radius:250px;
+	text-decoration : none;
+	width:250px;
+	height:250px;
+	text-align : center;
+	font-size : 4rem;
+	margin-top : 5%;
+	margin-left : 20%;
+}
+
+.footer{
+	height : 48px;
+	position : fixed;
+	bottom : 0px;
+}
+
+.textes{
+	border-bottom : 2px solid #c388da;
+}
+
+.btn-plus{
+	position : relative;
+	top : 15px;
+	background-color : #7a4bb1;
+	width : 120px;
+	height : 50px;
+}
+
+#sos{
+	position : relative;
+	top : 28%;
 }
