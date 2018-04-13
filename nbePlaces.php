@@ -27,7 +27,6 @@
 	else{
 		if (isset($_SESSION['identifiant'])) {
 			?>
-			<h1>Ajouter un produit</h1>
 			<form method="post" id="Bouton">
 				<div class="formulaire">
 					<label for="NbePlace">Nombre de places disponibles : </label><br/>
