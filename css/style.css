@@ -2,7 +2,7 @@
 h3{
 	font-size : 2.2em;
 	padding-bottom : 15px;
-	border-bottom : 2px solid #ffc0fd;
+	border-bottom : 2px solid #F1948A;
 }
 
 .contain{
@@ -11,7 +11,7 @@ h3{
 	padding-bottom : 10px;
 	padding-top : 10px;
 	height : 400px;
-	border-bottom : 2px solid #ffc0fd;
+	border-bottom : 2px solid #F1948A;
 }
 
 .mid{
@@ -26,7 +26,7 @@ h3{
 .header, .footer{
 	padding-bottom : 5px;
 	font-size : 2em;
-	background-color : #ffc0fd;
+	background-color : #F1948A;
 }
 
 .title{
@@ -71,7 +71,7 @@ body{
 }
 
 .degrade{
-	background-image:linear-gradient(#ffc0fd, white);
+	background-image:linear-gradient(#F1948A, white);
 	height : 3px;
 	width : 100%;
 	display : bloc;
@@ -84,7 +84,7 @@ body{
 }
 
 .event, .contact{
-	background-color : #ffc0fd;
+	background-color : #F1948A;
 	font-size : 2.5rem;
 	max-width : 20%;
 	margin-right : 15px;
@@ -115,7 +115,6 @@ body{
 
 .footer{
 	height : 48px;
-	position : fixed;
 	bottom : 0px;
 }
 

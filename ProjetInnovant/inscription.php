@@ -64,11 +64,11 @@
 					<input type="text" name="identifiant" required/>
 				</div>
 				<div class="formulaire">
-					<label for="Nom">Nom de l'hébergement: </label><br/>
+					<label for="Nom">Nom </label><br/>
 					<input type="text" name="Nom" required/>
 				</div>
 				<div class="formulaire">
-					<label for="Adresse">Adresse de l'hébergement : </label><br/>
+					<label for="Adresse">Adresse : </label><br/>
 					<input type="text" name="Adresse" required/>
 				</div>
 				<div class="formulaire">

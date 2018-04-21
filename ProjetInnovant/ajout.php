@@ -1,19 +1,15 @@
 </!DOCTYPE html>
 <html lang="fr">
-	<?php 
-		include("openbdd.php");
-		include("en-tete.php");
-	?>
+	<?php include("en-tete.php");?>
+	<?php include 'openbdd.php';?>
 	<body>
 	<?php 
-	include("openbdd.php");
-	if (isset($_POST['Nom']) && isset($_SESSION['Pseudo'])){
+	if (isset($_POST['Titre']) && isset($_POST['Date']) && isset($_SESSION['identifiant'])){
 		$T=$_POST['Titre'];
 		$Des=$_POST['Description'];
 		$D=$_POST['Date'];
 		$I=$_POST['Infos'];
-		$D=$_POST['description'];
-		$requete = "INSERT INTO evenements VALUES (\"".$T."\",\"".$Des."\",\"".$D."\",\"".$I."\",\"".$_SESSION['Pseudo']."\")"; 
+		$requete = "INSERT INTO evenements VALUES (\"".$T."\",\"".$Des."\",\"".$D."\",\"".$I."\",\"".$_SESSION['identifiant']."\")"; 
 		if ($reponse= $bdd->query($requete)){ ?>
 			<p class="enr">Enregistrement terminée </p><br/>
 			<form  action ="index.php" method="post">
@@ -31,7 +27,7 @@
 	else{
 		if (isset($_SESSION['identifiant'])) {
 			?>
-			<h1>Ajouter un évènement</h1>
+			<h1>Ajouter un évènement </h1>
 			<form method="post" id="Bouton">
 				<div class="formulaire">
 					<label for="Titre">Titre de l'évènement: </label><br/>
@@ -61,6 +57,6 @@
 			</form>
 		<?php }
 	} ?>
-	<?php include("pied_de_page.php") ?>
+	<?php include("pied_de_page.php"); ?>
 	</body>
 </html>
